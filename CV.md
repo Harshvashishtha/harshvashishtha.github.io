@@ -4,6 +4,7 @@ title: "HARSH VASHISTHA"
 ---
 [Download CV](https://raw.githubusercontent.com/Harshvashishtha/harshvashishtha.github.io/master/CVHV.pdf)
 
+[View CV (PDF)](CVHV.pdf)
 
 Postdoctoral associate in Neuroscience 
 
