@@ -22,3 +22,12 @@ Cell size regulation is a fundamental aspect of cell biology, essential for main
 ## Non genetic inheritence and phenotypic variability in _E. Coli_
 Stochasticity in biochemical processes leads to variability in physical properties of isogenic cells over time. Although this heterogeneity helps cells survive changing environmental conditions, it is partially restrained by the inheritance of cellular components between consecutive generations. This raises the questions: over what time scale do cellular properties change? And how reliable and stable are the non-genetic inheritance mechanisms of cellular components? We answered these questions by measuring the non-genetic inheritance dynamics of cell properties of sister cells and determined their stability and persistence in the face of molecular noise and environmental fluctuations. This study showed that non-genetic inheritance influences cell properties over several generations, rather than the previously believed 1 or 2 generations. Finally, we corroborated our empirical findings  with a theoretical model that successfully reproduced multigenerational memory between sister cells.
 - [Vashistha et al](https://elifesciences.org/articles/64779), [Stawsky et al](https://www.cell.com/iscience/pdf/S2589-0042(21)01648-5.pdf), [ElGamel et al](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401)
+
+<div style="display: flex; gap: 10px;">
+  <video width="48%" controls>
+    <source src="/assets/videos/video1.mp4" type="video/mp4">
+  </video>
+  <video width="48%" controls>
+    <source src="/assets/videos/video2.mp4" type="video/mp4">
+  </video>
+</div>
