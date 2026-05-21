@@ -108,14 +108,15 @@ title: ""
     model of cell size homeostasis and experimentally altered molecular entities involved in cell 
     size monitoring to evaluate their effect on cell size.
   </p>
-  <div class="pub-links">
+  
+   <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+      <source src="/SV.mp4" type="video/mp4">
+    </video>
+    <div class="pub-links">
     📄 <a href="https://www.nature.com/articles/s41467-023-41487-0">Vashistha et al</a>
     <a href="https://www.cell.com/current-biology/pdf/S0960-9822(20)31776-0.pdf">Kohram et al</a>
     <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1615526115">Susman et al</a>
   </div>
-   <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
-      <source src="/SV.mp4" type="video/mp4">
-    </video>
   </div>
 </div>
 
