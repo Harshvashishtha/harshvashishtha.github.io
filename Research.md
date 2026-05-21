@@ -113,9 +113,8 @@ title: ""
     <a href="https://www.cell.com/current-biology/pdf/S0960-9822(20)31776-0.pdf">Kohram et al</a>
     <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1615526115">Susman et al</a>
   </div>
-  <div class="video-container">
-    <video autoplay muted playsinline loop>
-      <source src="/Ecoli.avi" type="video/avi">
+   <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+      <source src="/SV.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -134,7 +133,7 @@ title: ""
       was corroborated by a theoretical model that reproduced multigenerational memory between 
       sister cells.
     </p>
-    <video width="50px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+    <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
       <source src="/SV.mp4" type="video/mp4">
     </video>
   </div>
