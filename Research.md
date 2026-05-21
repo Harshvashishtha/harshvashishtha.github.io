@@ -134,7 +134,7 @@ title: ""
       was corroborated by a theoretical model that reproduced multigenerational memory between 
       sister cells.
     </p>
-    <video width="250px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+    <video width="50px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
       <source src="/SV.mp4" type="video/mp4">
     </video>
   </div>
