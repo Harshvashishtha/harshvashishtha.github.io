@@ -122,25 +122,24 @@ title: ""
 
 <div class="project-card">
   <h2>Non-genetic inheritance and phenotypic variability in <em>E. coli</em></h2>
-  <p>
-    Stochasticity in biochemical processes leads to variability in physical properties of isogenic 
-    cells over time. Although this heterogeneity helps cells survive changing environmental 
-    conditions, it is partially restrained by the inheritance of cellular components between 
-    consecutive generations. We answered key questions about the timescale of cellular property 
-    changes and the reliability of non-genetic inheritance mechanisms by measuring inheritance 
-    dynamics of sister cell properties. This study showed that non-genetic inheritance influences 
-    cell properties over several generations — rather than the previously believed 1 or 2 — and 
-    was corroborated by a theoretical model that reproduced multigenerational memory between 
-    sister cells.
-  </p>
+  <div style="display: flex; gap: 20px; align-items: center;">
+    <p style="flex: 1;">
+      Stochasticity in biochemical processes leads to variability in physical properties of isogenic 
+      cells over time. Although this heterogeneity helps cells survive changing environmental 
+      conditions, it is partially restrained by the inheritance of cellular components between 
+      consecutive generations. We answered key questions about the timescale of cellular property 
+      changes and the reliability of non-genetic inheritance mechanisms by measuring inheritance 
+      dynamics of sister cell properties. This study showed that non-genetic inheritance influences 
+      cell properties over several generations — rather than the previously believed 1 or 2 — and 
+      was corroborated by a theoretical model that reproduced multigenerational memory between 
+      sister cells.
+    </p>
+    <video width="250px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+      <source src="/SV.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="pub-links">
     📄 <a href="https://elifesciences.org/articles/64779">Vashistha et al</a>
     <a href="https://www.cell.com/iscience/pdf/S2589-0042(21)01648-5.pdf">Stawsky et al</a>
     <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401">ElGamel et al</a>
   </div>
-  <div class="video-container">
-    <video autoplay muted playsinline loop>
-      <source src="/SV.mp4" type="video/mp4">
-    </video>
-  </div>
-</div>
