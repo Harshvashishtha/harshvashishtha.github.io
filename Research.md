@@ -17,7 +17,11 @@ Odor-direction sensing is a fascinating aspect of sensory biology, where organis
 Cell size regulation is a fundamental aspect of cell biology, essential for maintaining cellular homeostasis and ensuring proper growth and division. Various factors, including nutrient availability, environmental conditions, and genetic factors, can influence cell size. E. coli cells employ sophisticated molecular machinery to monitor their size and coordinate growth and division accordingly. In this project we developed a phenomenological model of cell size homeostasis and then experimentally altered molecular entitites involved in cell size monitering to evaluate their affect on cell size.
 
 - [Vashistha et al](https://www.nature.com/articles/s41467-023-41487-0), [Kohram et al](https://www.cell.com/current-biology/pdf/S0960-9822(20)31776-0.pdf), [Susman et al](https://www.pnas.org/doi/abs/10.1073/pnas.1615526115)
-
+<div style="display: flex; gap: 10px;">
+  <video width="48%" controls>
+    <source src="Ecoli.avi" type="video/avi">
+  </video>
+</div>
 
 ## Non genetic inheritence and phenotypic variability in _E. Coli_
 Stochasticity in biochemical processes leads to variability in physical properties of isogenic cells over time. Although this heterogeneity helps cells survive changing environmental conditions, it is partially restrained by the inheritance of cellular components between consecutive generations. This raises the questions: over what time scale do cellular properties change? And how reliable and stable are the non-genetic inheritance mechanisms of cellular components? We answered these questions by measuring the non-genetic inheritance dynamics of cell properties of sister cells and determined their stability and persistence in the face of molecular noise and environmental fluctuations. This study showed that non-genetic inheritance influences cell properties over several generations, rather than the previously believed 1 or 2 generations. Finally, we corroborated our empirical findings  with a theoretical model that successfully reproduced multigenerational memory between sister cells.
