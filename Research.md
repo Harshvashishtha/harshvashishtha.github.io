@@ -110,7 +110,7 @@ title: ""
   </p>
   
    <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
-      <source src="/SV.mp4" type="video/mp4">
+      <source src="/Ecoli.mp4" type="video/mp4">
     </video>
     <div class="pub-links">
     📄 <a href="https://www.nature.com/articles/s41467-023-41487-0">Vashistha et al</a>
