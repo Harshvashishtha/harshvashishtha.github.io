@@ -115,7 +115,7 @@ title: ""
   </div>
   <div class="video-container">
     <video autoplay muted playsinline loop>
-      <source src="Ecoli.avi" type="video/avi">
+      <source src="/Ecoli.avi" type="video/avi">
     </video>
   </div>
 </div>
@@ -140,7 +140,7 @@ title: ""
   </div>
   <div class="video-container">
     <video autoplay muted playsinline loop>
-      <source src="SV.mp4" type="video/mp4">
+      <source src="/SV.mp4" type="video/mp4">
     </video>
   </div>
 </div>
