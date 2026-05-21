@@ -109,7 +109,7 @@ title: ""
       model of cell size homeostasis and experimentally altered molecular entities involved in cell 
       size monitoring to evaluate their effect on cell size.
     </p>
-    <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+    <video width="50px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
       <source src="/Ecoli.mp4" type="video/mp4">
     </video>
   </div>
