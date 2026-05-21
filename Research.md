@@ -99,24 +99,24 @@ title: ""
 
 <div class="project-card">
   <h2>Cell size regulation in <em>E. coli</em></h2>
-  <p>
-    Cell size regulation is a fundamental aspect of cell biology, essential for maintaining 
-    cellular homeostasis and ensuring proper growth and division. Various factors, including 
-    nutrient availability, environmental conditions, and genetic factors, can influence cell size. 
-    <em>E. coli</em> cells employ sophisticated molecular machinery to monitor their size and 
-    coordinate growth and division accordingly. In this project we developed a phenomenological 
-    model of cell size homeostasis and experimentally altered molecular entities involved in cell 
-    size monitoring to evaluate their effect on cell size.
-  </p>
-  
-   <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
+  <div style="display: flex; gap: 20px; align-items: center;">
+    <p style="flex: 1;">
+      Cell size regulation is a fundamental aspect of cell biology, essential for maintaining 
+      cellular homeostasis and ensuring proper growth and division. Various factors, including 
+      nutrient availability, environmental conditions, and genetic factors, can influence cell size. 
+      <em>E. coli</em> cells employ sophisticated molecular machinery to monitor their size and 
+      coordinate growth and division accordingly. In this project we developed a phenomenological 
+      model of cell size homeostasis and experimentally altered molecular entities involved in cell 
+      size monitoring to evaluate their effect on cell size.
+    </p>
+    <video width="100px" autoplay muted playsinline loop style="border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.15); flex-shrink: 0;">
       <source src="/Ecoli.mp4" type="video/mp4">
     </video>
-    <div class="pub-links">
+  </div>
+  <div class="pub-links">
     📄 <a href="https://www.nature.com/articles/s41467-023-41487-0">Vashistha et al</a>
     <a href="https://www.cell.com/current-biology/pdf/S0960-9822(20)31776-0.pdf">Kohram et al</a>
     <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1615526115">Susman et al</a>
-  </div>
   </div>
 </div>
 
@@ -143,3 +143,4 @@ title: ""
     <a href="https://www.cell.com/iscience/pdf/S2589-0042(21)01648-5.pdf">Stawsky et al</a>
     <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401">ElGamel et al</a>
   </div>
+</div>
