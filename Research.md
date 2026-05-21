@@ -25,6 +25,6 @@ Stochasticity in biochemical processes leads to variability in physical properti
 
 <div style="display: flex; gap: 10px;">
   <video width="48%" controls>
-    <source src="Sister video.mp4" type="video/mp4">
+    <source src="Sister Video.mp4" type="video/mp4">
   </video>
 </div>
