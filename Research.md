@@ -222,10 +222,10 @@
           </video>
         </div>
       </div>
-       </p>
+      
       <div class="pub-links">
         <span class="pub-label">📄 Publications</span>
-        <a href="[https://osf.io/preprints/psyarxiv/4zbms_v1]"</a>
+        <a href="https://osf.io/preprints/psyarxiv/4zbms_v1"</a>
       </div>
     </div>
 
