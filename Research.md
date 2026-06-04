@@ -292,9 +292,9 @@
           Notably, this expansion aftereffect does not require any spatial gradient to be perceived.
           We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
         </p>
-        <div class="card-video" style="width: 50px;">
+        <div class="card-video" style="width: 100px;">
           <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video muted playsinline loop style="width: 50px;">
+            <video muted playsinline loop style="width: 100px;">
               <source src="/Supplementary Video 1.mp4" type="video/mp4">
             </video>
             <div class="play-overlay">
