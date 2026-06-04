@@ -231,7 +231,7 @@
           model of cell size homeostasis and experimentally altered molecular entities involved in cell
           size monitoring to evaluate their effect on cell size.
         </p>
-        <div class="card-video">
+        <div class="card-video" style="width: 50px;">
           <video autoplay muted playsinline loop>
             <source src="/Ecoli.mp4" type="video/mp4">
           </video>
@@ -260,7 +260,7 @@
           was corroborated by a theoretical model that reproduced multigenerational memory between
           sister cells.
         </p>
-        <div class="card-video">
+        <div class="card-video" style="width: 100px;">
           <video autoplay muted playsinline loop>
             <source src="/SV.mp4" type="video/mp4">
           </video>
