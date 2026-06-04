@@ -377,5 +377,37 @@
     </div>
 
   </div>
+
+
+<script>
+  document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
+    wrapper.addEventListener('click', function () {
+      const video = wrapper.querySelector('video');
+
+      // Force load if not yet loaded
+      if (video.readyState === 0) {
+        video.load();
+      }
+
+      if (video.paused) {
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(function () {
+              wrapper.classList.add('playing');
+            })
+            .catch(function (err) {
+              console.error('Video play failed:', err);
+              alert('Video could not play. Check the file path: ' + video.currentSrc);
+            });
+        }
+      } else {
+        video.pause();
+        wrapper.classList.remove('playing');
+      }
+    });
+  });
+</script>
+  
 </body>
 </html>
