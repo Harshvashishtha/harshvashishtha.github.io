@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -93,11 +93,10 @@
 
     .card-video {
       flex-shrink: 0;
-      width: 200px;
     }
 
     .card-video video {
-      width: 100%;
+      display: block;
       border-radius: 10px;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.12);
     }
@@ -160,7 +159,11 @@
       }
 
       .card-video {
-        width: 100%;
+        width: 100% !important;
+      }
+
+      .card-video video {
+        width: 100% !important;
       }
 
       .section-header h2 {
@@ -210,29 +213,32 @@
       </div>
     </div>
 
- <!-- Project 2 -->
+    <!-- Project 3 -->
     <div class="project-card">
-      <h3>Luminance induced expansion aftereffect</h3>
-      <p>
-        Adaptation to visual motion produces robust aftereffects. Following prolonged viewing of a moving stimulus, a subsequently viewed stationary pattern appears to drift in the opposite direction, a phenomenon known as the motion aftereffect (MAE). However, whether a purely temporal luminance change, in the absence of spatial displacement, is sufficient to give rise to motion aftereffects remains less explored. We found that adaptation to decreasing sawtooth luminance ramps produces not only a brightening aftereffect(as has been reported before) but also an illusory expansion aftereffect on a subsequently presented uniform gray screen. Notably, this expansion aftereffect does not require any spatial gradient to be perceived. We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
-      </p>
-      <div class="card-video" style="width: 50px;">
-          <video autoplay muted playsinline loop>
-            <source src="//Supplementary Video 1.mp4" type="video/mp4">
+      <h3>Luminance Induced Expansion Aftereffect</h3>
+      <div class="card-body">
+        <p>
+          Adaptation to visual motion produces robust aftereffects. Following prolonged viewing of a
+          moving stimulus, a subsequently viewed stationary pattern appears to drift in the opposite
+          direction, a phenomenon known as the motion aftereffect (MAE). However, whether a purely
+          temporal luminance change, in the absence of spatial displacement, is sufficient to give rise
+          to motion aftereffects remains less explored. We found that adaptation to decreasing sawtooth
+          luminance ramps produces not only a brightening aftereffect (as has been reported before) but
+          also an illusory expansion aftereffect on a subsequently presented uniform gray screen.
+          Notably, this expansion aftereffect does not require any spatial gradient to be perceived.
+          We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
+        </p>
+        <div class="card-video" style="width: 50px;">
+          <video autoplay muted playsinline loop style="width: 50px;">
+            <source src="/Supplementary Video 1.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      
       <div class="pub-links">
         <span class="pub-label">📄 Publications</span>
-        <a href="https://osf.io/preprints/psyarxiv/4zbms_v1"</a>
+        <a href="https://osf.io/preprints/psyarxiv/4zbms_v1">Vashistha et al. (PsyArXiv)</a>
       </div>
     </div>
-
-
-
-
-
 
     <hr class="section-divider" />
 
@@ -242,7 +248,7 @@
       <h2>Past Projects</h2>
     </div>
 
-    <!-- Project 3 -->
+    <!-- Project 4 -->
     <div class="project-card">
       <h3>Cell Size Regulation in <em>E. coli</em></h3>
       <div class="card-body">
@@ -256,7 +262,7 @@
           size monitoring to evaluate their effect on cell size.
         </p>
         <div class="card-video" style="width: 50px;">
-          <video autoplay muted playsinline loop>
+          <video autoplay muted playsinline loop style="width: 50px;">
             <source src="/Ecoli.mp4" type="video/mp4">
           </video>
         </div>
@@ -269,7 +275,7 @@
       </div>
     </div>
 
-    <!-- Project 4 -->
+    <!-- Project 5 -->
     <div class="project-card">
       <h3>Non-Genetic Inheritance and Phenotypic Variability in <em>E. coli</em></h3>
       <div class="card-body">
@@ -285,7 +291,7 @@
           sister cells.
         </p>
         <div class="card-video" style="width: 100px;">
-          <video autoplay muted playsinline loop>
+          <video autoplay muted playsinline loop style="width: 100px;">
             <source src="/SV.mp4" type="video/mp4">
           </video>
         </div>
