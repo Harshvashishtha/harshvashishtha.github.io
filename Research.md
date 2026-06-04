@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -95,10 +94,75 @@
       flex-shrink: 0;
     }
 
-    .card-video video {
+    /* ── Click-to-Play Video Wrapper ── */
+    .video-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .video-wrapper video {
       display: block;
       border-radius: 10px;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.12);
+    }
+
+    /* Play button overlay */
+    .play-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      transition: background 0.2s ease;
+    }
+
+    .video-wrapper:hover .play-overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .play-overlay .play-icon {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent #ffffff;
+      margin-left: 3px;
+    }
+
+    /* Pause button shown when playing */
+    .play-overlay .pause-icon {
+      display: none;
+      gap: 4px;
+    }
+
+    .play-overlay .pause-icon span {
+      display: block;
+      width: 4px;
+      height: 16px;
+      background: #ffffff;
+      border-radius: 2px;
+    }
+
+    /* State: playing */
+    .video-wrapper.playing .play-overlay {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .video-wrapper.playing:hover .play-overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .video-wrapper.playing .play-icon {
+      display: none;
+    }
+
+    .video-wrapper.playing .pause-icon {
+      display: flex;
     }
 
     /* ── Publication Links ── */
@@ -229,9 +293,17 @@
           We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
         </p>
         <div class="card-video" style="width: 50px;">
-          <video autoplay muted playsinline loop style="width: 50px;">
-            <source src="/Supplementary Video 1.mp4" type="video/mp4">
-          </video>
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video muted playsinline loop style="width: 50px;">
+              <source src="/Supplementary Video 1.mp4" type="video/mp4">
+            </video>
+            <div class="play-overlay">
+              <div class="play-icon"></div>
+              <div class="pause-icon">
+                <span></span><span></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pub-links">
