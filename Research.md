@@ -210,6 +210,30 @@
       </div>
     </div>
 
+ <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Luminance induced expansion aftereffect</h3>
+      <p>
+        Adaptation to visual motion produces robust aftereffects. Following prolonged viewing of a moving stimulus, a subsequently viewed stationary pattern appears to drift in the opposite direction, a phenomenon known as the motion aftereffect (MAE). However, whether a purely temporal luminance change, in the absence of spatial displacement, is sufficient to give rise to motion aftereffects remains less explored. We found that adaptation to decreasing sawtooth luminance ramps produces not only a brightening aftereffect(as has been reported before) but also an illusory expansion aftereffect on a subsequently presented uniform gray screen. Notably, this expansion aftereffect does not require any spatial gradient to be perceived. We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
+      </p>
+      <div class="card-video" style="width: 50px;">
+          <video autoplay muted playsinline loop>
+            <source src="/Alexa.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+       </p>
+      <div class="pub-links">
+        <span class="pub-label">📄 Publications</span>
+        <a href="[https://osf.io/preprints/psyarxiv/4zbms_v1]"</a>
+      </div>
+    </div>
+
+
+
+
+
+
     <hr class="section-divider" />
 
     <!-- ══ Past Projects ══ -->
