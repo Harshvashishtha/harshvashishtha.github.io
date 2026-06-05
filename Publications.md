@@ -4,7 +4,7 @@ title: "Publications"
 ---
 [Google Scholar](https://scholar.google.com/citations?user=YdsptUYAAAAJ&hl=en)
 
-Here is the full list reformatted:
+
 
 1. **H. Vashistha**, N. Matos, and D. Clark, Dynamic trajectory cues drive sequenced integration in approach detectors, [***preprint (2026)***](https://osf.io/preprints/psyarxiv/4zbms_v1)
 
