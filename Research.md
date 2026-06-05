@@ -109,60 +109,15 @@
       box-shadow: 2px 2px 12px rgba(0,0,0,0.12);
     }
 
-    /* Play button overlay */
-    .play-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.35);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      transition: background 0.2s ease;
+    .click-label {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 6px;
     }
 
-    .video-wrapper:hover .play-overlay {
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .play-overlay .play-icon {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 8px 0 8px 16px;
-      border-color: transparent transparent transparent #ffffff;
-      margin-left: 3px;
-    }
-
-    /* Pause button shown when playing */
-    .play-overlay .pause-icon {
-      display: none;
-      gap: 4px;
-    }
-
-    .play-overlay .pause-icon span {
-      display: block;
-      width: 4px;
-      height: 16px;
-      background: #ffffff;
-      border-radius: 2px;
-    }
-
-    /* State: playing */
-    .video-wrapper.playing .play-overlay {
-      background: rgba(0, 0, 0, 0);
-    }
-
-    .video-wrapper.playing:hover .play-overlay {
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    .video-wrapper.playing .play-icon {
-      display: none;
-    }
-
-    .video-wrapper.playing .pause-icon {
-      display: flex;
+    .video-wrapper.playing ~ .click-label {
+      visibility: hidden;
     }
 
     /* ── Publication Links ── */
@@ -293,18 +248,12 @@
           We term this illusory percept the luminance-induced expansion aftereffect (Lexa).
         </p>
         <div class="card-video" style="width: 100px;">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
+          <div class="video-wrapper">
             <video muted playsinline style="width: 100px;">
               <source src="/Supplementary Video 1.mp4" type="video/mp4">
             </video>
-            <div class="play-overlay">
-              <div class="play-icon"></div>
-              <div class="pause-icon">
-                <span></span><span></span>
-              </div>
-            </div>
           </div>
-            <p style="text-align: center; font-size: 0.75rem; color: #888; margin-top: 6px;">Click to play</p>
+          <p class="click-label">Click to play</p>
         </div>
       </div>
       <div class="pub-links">
@@ -379,37 +328,38 @@
 
   </div>
 
+  <script>
+    document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
+      const video = wrapper.querySelector('video');
+      const label = wrapper.parentElement.querySelector('.click-label');
 
-<script>
-  document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
-    const video = wrapper.querySelector('video');
+      wrapper.addEventListener('click', function () {
+        if (video.readyState === 0) {
+          video.load();
+        }
 
-    wrapper.addEventListener('click', function () {
-      // Force load if not yet loaded
-      if (video.readyState === 0) {
-        video.load();
-      }
+        // Always restart from beginning — no pause on click
+        video.currentTime = 0;
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(function () {
+              wrapper.classList.add('playing');
+              if (label) label.style.visibility = 'hidden';
+            })
+            .catch(function (err) {
+              console.error('Video play failed:', err);
+            });
+        }
+      });
 
-      // Always restart and play — no pause on click
-      video.currentTime = 0;
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise
-          .then(function () {
-            wrapper.classList.add('playing');
-          })
-          .catch(function (err) {
-            console.error('Video play failed:', err);
-            alert('Video could not play. Check the file path: ' + video.currentSrc);
-          });
-      }
+      // When video ends, restore "Click to play" label
+      video.addEventListener('ended', function () {
+        wrapper.classList.remove('playing');
+        if (label) label.style.visibility = 'visible';
+      });
     });
+  </script>
 
-    // When the video finishes, show the play button again
-    video.addEventListener('ended', function () {
-      wrapper.classList.remove('playing');
-    });
-  });
-</script>
 </body>
 </html>
