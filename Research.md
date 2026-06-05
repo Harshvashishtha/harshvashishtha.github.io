@@ -294,7 +294,7 @@
         </p>
         <div class="card-video" style="width: 100px;">
           <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video muted playsinline loop style="width: 100px;">
+            <video muted playsinline style="width: 100px;">
               <source src="/Supplementary Video 1.mp4" type="video/mp4">
             </video>
             <div class="play-overlay">
