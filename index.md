@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,6 +17,83 @@
       line-height: 1.75;
     }
 
+    /* ══ Header ══ */
+    .site-header {
+      position: relative;
+      width: 100%;
+      min-height: 300px;
+      background-color: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 60px 24px;
+    }
+
+    .header-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/CajalFlyBrain.jpg/800px-CajalFlyBrain.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.10;
+      filter: grayscale(100%);
+      transform: scale(1.05);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .header-name {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+
+    .header-title {
+      font-size: 1.1rem;
+      color: #a0bcd8;
+      letter-spacing: 0.08em;
+      margin-bottom: 28px;
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .header-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 24px;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .header-nav a:hover {
+      background: rgba(74, 144, 217, 0.35);
+      border-color: #4a90d9;
+    }
+
+    .header-nav a.active {
+      background: rgba(74, 144, 217, 0.35);
+      border-color: #4a90d9;
+    }
+
+    /* ══ Page Wrapper ══ */
     .page-wrapper {
       max-width: 900px;
       margin: 60px auto;
@@ -225,6 +301,19 @@
 
     /* ── Mobile ── */
     @media (max-width: 620px) {
+      .header-name {
+        font-size: 2rem;
+      }
+
+      .header-title {
+        font-size: 0.95rem;
+      }
+
+      .site-header {
+        min-height: 240px;
+        padding: 40px 16px;
+      }
+
       .hero-card {
         flex-direction: column;
         align-items: center;
@@ -252,6 +341,24 @@
   </style>
 </head>
 <body>
+
+  <!-- ══ Header ══ -->
+  <header class="site-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <h1 class="header-name">Harsh Vashistha</h1>
+      <p class="header-title">Postdoctoral Associate &nbsp;·&nbsp; Visual Neuroscience &nbsp;·&nbsp; Yale University</p>
+      <nav class="header-nav">
+        <a href="index.html" class="active">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ══ Page Content ══ -->
   <div class="page-wrapper">
 
     <!-- Hero -->
