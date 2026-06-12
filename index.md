@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me — Harsh Vashistha</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,13 +12,11 @@
       padding: 0;
     }
     body {
-  font-family: 'Inter', sans-serif;  /* ← change this line only */
-  background-color: #f4f6f9;
-  color: #2c2c2c;
-  line-height: 1.75;
-}
-
-
+      font-family: 'Nunito', sans-serif;  /* ← changed */
+      background-color: #f4f6f9;
+      color: #2c2c2c;
+      line-height: 1.75;
+    }
 
     .page-wrapper {
       max-width: 900px;
