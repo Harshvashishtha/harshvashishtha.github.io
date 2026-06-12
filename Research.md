@@ -211,7 +211,11 @@
         cues to make accurate inferences. This project seeks to investigate the neural processes
         underlying the integration of multiple visual cues related to a single visual event, aiming
         to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
-      </p>
+     </p>
+      <div class="pub-links">
+        <span class="pub-label">📄 Publications</span>
+        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1">Vashistha et al.</a>
+      </div>
     </div>
 
     <!-- Project 2 -->
