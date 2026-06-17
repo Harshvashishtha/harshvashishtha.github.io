@@ -213,7 +213,7 @@
       underlying the integration of multiple visual cues related to a single visual event, aiming
       to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
     </p>
-    <div class="card-video" style="flex-shrink: 0; width: 100px;">
+    <div class="card-video" style="flex-shrink: 0; width: 150px;">
       <video autoplay muted playsinline loop style="width: 100px;">
         <source src="/Supplemental Video S1.mp4" type="video/mp4">
       </video>
