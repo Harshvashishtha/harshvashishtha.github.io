@@ -211,14 +211,11 @@
         cues to make accurate inferences. This project seeks to investigate the neural processes
         underlying the integration of multiple visual cues related to a single visual event, aiming
         to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
-      
-        <div class="card-video" style="width: 150px;">
-          <div class="video-wrapper">
-            <video muted playsinline style="width: 150px;">
-              <source src="/Supplemental Video S1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <p class="click-label">Click to play</p>
+      </p>
+        <div class="card-video" style="width: 100px;">
+          <video autoplay muted playsinline loop style="width: 100px;">
+            <source src="/Supplemental Video S1.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
       <div class="pub-links">
