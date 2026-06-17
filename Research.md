@@ -214,7 +214,7 @@
       to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
     </p>
     <div class="card-video" style="flex-shrink: 0; width: 150px;">
-      <video autoplay muted playsinline loop style="width: 100px;">
+      <video autoplay muted playsinline loop style="width: 150px;">
         <source src="/Supplemental Video S1.mp4" type="video/mp4">
       </video>
     </div>
