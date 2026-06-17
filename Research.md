@@ -202,19 +202,17 @@
 
 <!-- Project 1 -->
 <div class="project-card">
+  <h3>Multiple Cue Integration in Visual Perception</h3>
   <div class="project-content" style="display: flex; align-items: flex-start; gap: 20px;">
-    <div class="project-text" style="flex: 1;">
-      <h3>Multiple Cue Integration in Visual Perception</h3>
-      <p>
-        To understand the three-dimensional structure of the world from the two-dimensional images
-        projected onto our retinas, our brains rely on inference mechanisms. Due to the inherent noise
-        in natural visual environments, a single visual cue often fails to provide enough information
-        to make a reliable inference. In this case, our brains integrate evidence from multiple visual
-        cues to make accurate inferences. This project seeks to investigate the neural processes
-        underlying the integration of multiple visual cues related to a single visual event, aiming
-        to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
-      </p>
-    </div>
+    <p style="flex: 1;">
+      To understand the three-dimensional structure of the world from the two-dimensional images
+      projected onto our retinas, our brains rely on inference mechanisms. Due to the inherent noise
+      in natural visual environments, a single visual cue often fails to provide enough information
+      to make a reliable inference. In this case, our brains integrate evidence from multiple visual
+      cues to make accurate inferences. This project seeks to investigate the neural processes
+      underlying the integration of multiple visual cues related to a single visual event, aiming
+      to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
+    </p>
     <div class="card-video" style="flex-shrink: 0; width: 100px;">
       <video autoplay muted playsinline loop style="width: 100px;">
         <source src="/Supplemental Video S1.mp4" type="video/mp4">
@@ -226,6 +224,7 @@
     <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1">Vashistha et al.</a>
   </div>
 </div>
+
 
     <!-- Project 2 -->
     <div class="project-card">
