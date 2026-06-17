@@ -215,7 +215,7 @@
         <div class="card-video" style="width: 150px;">
           <div class="video-wrapper">
             <video muted playsinline style="width: 150px;">
-              <source src="/Supplementary Video S1.mp4" type="video/mp4">
+              <source src="/Supplemental Video S1.mp4" type="video/mp4">
             </video>
           </div>
           <p class="click-label">Click to play</p>
