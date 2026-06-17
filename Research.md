@@ -200,8 +200,10 @@
       <h2>Current Projects</h2>
     </div>
 
-    <!-- Project 1 -->
-    <div class="project-card">
+<!-- Project 1 -->
+<div class="project-card">
+  <div class="project-content" style="display: flex; align-items: flex-start; gap: 20px;">
+    <div class="project-text" style="flex: 1;">
       <h3>Multiple Cue Integration in Visual Perception</h3>
       <p>
         To understand the three-dimensional structure of the world from the two-dimensional images
@@ -212,17 +214,18 @@
         underlying the integration of multiple visual cues related to a single visual event, aiming
         to reveal the mechanisms and brain regions involved in generating coherent visual perceptions.
       </p>
-        <div class="card-video" style="width: 100px;">
-          <video autoplay muted playsinline loop style="width: 100px;">
-            <source src="/Supplemental Video S1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <div class="pub-links">
-        <span class="pub-label">📄 Publications</span>
-        <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1">Vashistha et al.</a>
-      </div>
     </div>
+    <div class="card-video" style="flex-shrink: 0; width: 100px;">
+      <video autoplay muted playsinline loop style="width: 100px;">
+        <source src="/Supplemental Video S1.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="pub-links">
+    <span class="pub-label">📄 Publications</span>
+    <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1">Vashistha et al.</a>
+  </div>
+</div>
 
     <!-- Project 2 -->
     <div class="project-card">
