@@ -7,7 +7,7 @@ title: "Publications"
 
 1. **H. Vashistha**, N. Matos, and D. Clark, Dynamic trajectory cues drive sequenced integration in approach detectors, [***preprint (2026)***](https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1)
 
-2. \*G. Santana, **\*H. Vashistha**, T. Emonet, and D. Clark, A neural circuit for olfactory motion detection, [***preprint (2026)***](https://osf.io/preprints/psyarxiv/4zbms_v1) (*co-first authors)
+2. \*G. Santana, **\*H. Vashistha**, T. Emonet, and D. Clark, A neural circuit for olfactory motion detection, [***preprint (2026)***](https://osf.io/preprints/psyarxiv/4zbms_v1) (*co-first authors)(in-preparation).
 
 3. **H. Vashistha** and D. Clark, A luminance-induced expansion aftereffect, [***preprint (2026)***](https://osf.io/preprints/psyarxiv/4zbms_v1)
 
