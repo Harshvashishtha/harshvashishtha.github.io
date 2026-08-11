@@ -202,7 +202,7 @@
 
 <!-- Project 1 -->
 <div class="project-card">
-  <h3>Multiple Cue Integration in Visual Perception</h3>
+ 
   <div class="project-content" style="display: flex; align-items: flex-start; gap: 20px;">
     <p style="flex: 1;">
     </p>
@@ -212,11 +212,7 @@
       </video>
     </div>
   </div>
-  <div class="pub-links">
-    <span class="pub-label">📄 Publications</span>
-    <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1">Vashistha et al.</a>
-  </div>
-</div>
+ 
 
 
   <script>
