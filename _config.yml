@@ -21,6 +21,7 @@ navigation:    # accepts {file, title, url, icon, sidebaricon}
   - { file: "Publications.md", title: "Publications"}
   - {file: "Resources.md", title: "Resources"}
   - {file: "Contact.md", title: "Contact"}
+  - {file: "illusion.md", title: "illusion"}
   
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
