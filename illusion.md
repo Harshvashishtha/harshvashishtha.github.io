@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
     }
 
     video {
-      width: 300px;
+      width: 500px;
       border-radius: 10px;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.12);
       display: block;
