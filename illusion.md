@@ -21,7 +21,7 @@
     }
 
     video {
-      width: 500px;
+      width: 400px;
       border-radius: 10px;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.12);
       display: block;
@@ -31,7 +31,7 @@
 <body>
 
   <video autoplay muted playsinline loop>
-    <source src="/Supplemental Video S1.mp4" type="video/mp4">
+    <source src="/illusion_test.mp4" type="video/mp4">
   </video>
 
 </body>
