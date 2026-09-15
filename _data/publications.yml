@@ -25,7 +25,6 @@
   venue: "bioRxiv"
   year: 2026
   type: preprint
-  status: "Under review at Nature"
   url: "https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1"
   note: "* Equal contribution."
   selected: true
@@ -39,7 +38,6 @@
   venue: "bioRxiv"
   year: 2026
   type: preprint
-  status: "In revision at PNAS"
   url: "https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1"
   selected: true
 
