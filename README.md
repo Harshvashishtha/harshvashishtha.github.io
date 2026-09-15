@@ -13,7 +13,7 @@ No build step to run yourself — push and it deploys.
 | Add or edit a project             | `Research.html`                             |
 | Change name, links, nav, ORCID    | `_config.yml`                               |
 | Change how anything looks         | `assets/css/main.css`                       |
-| Add the CV                        | drop the PDF in `assets/cv/`, set `cv_file` |
+| Edit the CV                       | `CV.html`                                   |
 
 Nothing else needs touching for routine updates.
 
@@ -37,14 +37,6 @@ tags preprints, and emits the Google Scholar citation metadata automatically:
 
 When a preprint is published, change `type` to `article`, update `venue` and
 `year`, and add the `doi`. Nothing else moves.
-
-## Turning the CV page on
-
-1. Put the PDF in `assets/cv/` (e.g. `assets/cv/vashistha-cv.pdf`).
-2. Set `cv_file: "vashistha-cv.pdf"` in `_config.yml`.
-
-The `/CV/` page and its nav link appear on their own. Leaving `cv_file` empty
-hides the nav link.
 
 ## ORCID
 

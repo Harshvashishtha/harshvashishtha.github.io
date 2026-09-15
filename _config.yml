@@ -15,8 +15,6 @@ author:
   linkedin: "https://www.linkedin.com/in/harsh-vashistha-ph-d-69226123/"
   affiliation: "Department of Molecular, Cellular and Developmental Biology, Yale University"
 
-# Drop the CV file in assets/cv/ and put its filename here to turn the CV page on.
-cv_file: "vashistha-cv.pdf"
 
 nav:
   - { title: "About",        url: "/" }

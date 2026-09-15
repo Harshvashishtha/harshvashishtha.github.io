@@ -45,9 +45,7 @@ description: "Harsh Vashistha is a postdoctoral associate in the Clark Lab at Ya
       <div class="hero-actions">
         <a class="btn btn-primary" href="{{ '/Research/' | relative_url }}">Research</a>
         <a class="btn" href="{{ '/Publications/' | relative_url }}">Publications</a>
-        {%- if site.cv_file and site.cv_file != "" %}
-        <a class="btn" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}">CV (PDF)</a>
-        {%- endif %}
+        <a class="btn" href="{{ '/CV/' | relative_url }}">CV</a>
         <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
       </div>
     </div>

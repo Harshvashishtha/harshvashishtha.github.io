@@ -635,6 +635,98 @@ main { flex: 1 0 auto; }
 .res-list a:hover { text-decoration: underline; }
 .res-list p { font-size: 0.92rem; color: var(--ink-2); margin-top: 0.2rem; }
 
+/* --- CV ------------------------------------------------------------------- */
+
+.cv { max-width: 54rem; }
+
+.cv-section { padding-top: 2.5rem; }
+.cv-section:first-of-type { padding-top: 0; }
+
+.cv-preamble {
+  font-size: 0.9rem;
+  color: var(--ink-3);
+  font-style: italic;
+  margin-top: -0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.cv-subhead {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  margin: 1.9rem 0 1rem;
+}
+.cv-list + .cv-subhead { margin-top: 2.2rem; }
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+.cv-list.compact { gap: 1.1rem; }
+
+.cv-list > li {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 0 1.75rem;
+  align-items: baseline;
+}
+
+.cv-when {
+  font-size: 0.82rem;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  padding-top: 0.15rem;
+}
+
+.cv-what h3 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.cv-kind {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--ink-3);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.cv-kind::before { content: "· "; }
+
+.cv-role {
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  margin-top: 0.12rem;
+}
+
+.cv-what p:not(.cv-role) {
+  font-size: 0.93rem;
+  color: var(--ink-2);
+  margin-top: 0.4rem;
+  max-width: 40rem;
+}
+
+.prose dl.cv-skills { display: grid; gap: 1.1rem; grid-template-columns: 1fr; }
+.prose dl.cv-skills dt {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+.prose dl.cv-skills dd { margin: 0; color: var(--ink-2); font-size: 0.94rem; }
+
+@media (max-width: 40em) {
+  .cv-list > li { grid-template-columns: minmax(0, 1fr); gap: 0.25rem 0; }
+  .cv-when { order: -1; padding-top: 0; }
+}
+
 /* --- Contact -------------------------------------------------------------- */
 
 .contact-grid {

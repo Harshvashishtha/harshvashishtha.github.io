@@ -2,46 +2,402 @@
 layout: default
 title: "CV"
 permalink: /CV/
-description: "Curriculum vitae for Harsh Vashistha — education, positions, publications and awards."
+description: "Curriculum vitae for Harsh Vashistha — training, grants, awards, invited talks, technical expertise, mentoring, teaching and outreach."
 ---
 
 <article class="page">
   <div class="wrap">
     <header class="page-head">
       <h1>Curriculum vitae</h1>
-      {%- if site.cv_file and site.cv_file != "" %}
-      <p class="page-sub">Full CV as a PDF. For papers only, the
-        <a href="{{ '/Publications/' | relative_url }}">publications page</a> is kept current.</p>
-      {%- endif %}
+      <p class="page-sub">
+        Papers are on the <a href="{{ '/Publications/' | relative_url }}">publications page</a>,
+        which is kept current. Projects are described under
+        <a href="{{ '/Research/' | relative_url }}">research</a>.
+      </p>
     </header>
 
-    {%- if site.cv_file and site.cv_file != "" %}
-    <div class="hero-actions" style="margin: 0 0 2rem;">
-      <a class="btn btn-primary" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" download>Download PDF</a>
-      <a class="btn" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" rel="noopener">Open in a new tab</a>
-    </div>
+    <div class="cv">
 
-    <object data="{{ '/assets/cv/' | append: site.cv_file | relative_url }}#view=FitH"
-            type="application/pdf"
-            style="width:100%;height:min(80vh,900px);border:1px solid var(--rule);border-radius:8px;background:var(--surface-2);">
-      <div class="prose" style="padding:2rem;">
-        <p>Your browser can't display the PDF inline.
-          <a href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}">Download it instead</a>.</p>
-      </div>
-    </object>
-    {%- else %}
-    <div class="prose">
-      <p>The CV isn't posted yet. In the meantime, the
-        <a href="{{ '/Publications/' | relative_url }}">publications page</a> and
-        <a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a> cover the papers,
-        and <a href="{{ '/Research/' | relative_url }}">Research</a> covers the projects.</p>
+      <section class="cv-section">
+        <h2 class="section-title">Research profile</h2>
+        <div class="prose">
+          <p>
+            I study how neural circuits transform noisy, distributed sensory information
+            into a single committed action. My postdoctoral work established two results.
+            First, visual approach-detecting neurons integrate cues in the natural temporal
+            order those cues occur during a real approach event — a previously unrecognised
+            strategy I termed <em>sequenced cue integration</em>. Second, as co-lead of a
+            collaborative project, I discovered the first neural circuit in any animal that
+            computes the direction of motion of an odour signal.
+          </p>
+          <p>
+            I am extending these toward multisensory integration, behavioural arbitration
+            under conflicting drives, and bilateral sensory comparison, using
+            <em>Drosophila</em> as a system where these questions are quantitatively
+            tractable. I combine quantitative behaviour, two-photon imaging, optogenetics,
+            genetic perturbation and modelling, with a background in experimental and
+            theoretical physics.
+          </p>
+        </div>
+      </section>
 
-      <p class="pub-note-inline">
-        To turn this page on: drop the PDF into <code>assets/cv/</code> and set
-        <code>cv_file</code> in <code>_config.yml</code> to its filename. The page and the
-        nav link appear automatically.
-      </p>
+      <section class="cv-section">
+        <h2 class="section-title">Training and education</h2>
+        <ul class="cv-list">
+          <li>
+            <div class="cv-when">2021 – present</div>
+            <div class="cv-what">
+              <h3>Yale University</h3>
+              <p class="cv-role">Postdoctoral Associate in Neuroscience · New Haven, CT, USA</p>
+              <p>Visual and olfactory sensory computation in <em>Drosophila</em>. Mentor: Dr. Damon Clark.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2015 – 2021</div>
+            <div class="cv-what">
+              <h3>University of Pittsburgh</h3>
+              <p class="cv-role">Ph.D. in Physics · Pittsburgh, PA, USA</p>
+              <p>Advisor: Dr. Hanna Salman. Thesis: <em>The roles of intergeneration inheritance and intrageneration molecular dynamics in shaping living cells.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2010 – 2015</div>
+            <div class="cv-what">
+              <h3>Indian Institute of Science Education and Research, Bhopal</h3>
+              <p class="cv-role">B.S.–M.S. in Physics · Bhopal, India</p>
+              <p>Advisor: Dr. Dhanvir S. Rana. Thesis: <em>Induction of ferromagnetic ordering in paramagnetic CaRuO<sub>3</sub> by intrinsic tensile strain.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2022</div>
+            <div class="cv-what">
+              <h3>Marine Biological Laboratory</h3>
+              <p class="cv-role">Methods in Computational Neuroscience · Woods Hole, MA, USA</p>
+              <p>Selective summer course.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Grants and fellowships</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">2026</div>
+            <div class="cv-what">
+              <h3>K99/R00 Pathway to Independence application</h3>
+              <p class="cv-role">National Institutes of Health (NINDS)</p>
+              <p><em>Neural mechanisms underlying survival-driven conflicts in Drosophila.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2021</div>
+            <div class="cv-what">
+              <h3>Provost's Fellowship</h3>
+              <p class="cv-role">University of Pittsburgh</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2020</div>
+            <div class="cv-what">
+              <h3>Andrew W. Mellon Predoctoral Fellowship</h3>
+              <p class="cv-role">University of Pittsburgh</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2013</div>
+            <div class="cv-what">
+              <h3>Summer Research Fellowship</h3>
+              <p class="cv-role">Indian Academy of Sciences</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2010 – 2015</div>
+            <div class="cv-what">
+              <h3>INSPIRE Fellowship</h3>
+              <p class="cv-role">Department of Science and Technology, India</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Awards and honours</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">2019</div>
+            <div class="cv-what">
+              <h3>Winner, Three-Minute Thesis (3MT) Competition</h3>
+              <p class="cv-role">University of Pittsburgh</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2017</div>
+            <div class="cv-what">
+              <h3>Travel Grant</h3>
+              <p class="cv-role">International Summer School on Theoretical Biophysics, Cargèse, France</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Publications</h2>
+        <div class="prose">
+          <p>
+            Thirteen research articles and preprints, five as first or co-first author.
+            The full list, grouped by year with links and DOIs, is on the
+            <a href="{{ '/Publications/' | relative_url }}">publications page</a>; it is
+            also on <a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a>
+            and under ORCID <a href="https://orcid.org/{{ site.author.orcid }}" rel="noopener">{{ site.author.orcid }}</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Invited talks and seminars</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">2025</div>
+            <div class="cv-what">
+              <h3>Jawaharlal Nehru Centre for Advanced Scientific Research</h3>
+              <p class="cv-role">Bengaluru, India</p>
+              <p><em>Dynamic trajectory cues drive sequenced cue integration in approach detectors.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2025</div>
+            <div class="cv-what">
+              <h3>Indian Institute of Technology Madras</h3>
+              <p class="cv-role">Chennai, India</p>
+              <p><em>Visual feature integration to detect approach in flies and humans.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2019</div>
+            <div class="cv-what">
+              <h3>Stanford University</h3>
+              <p class="cv-role">Palo Alto, CA, USA</p>
+              <p><em>Non-genetic inheritance in isogenic bacterial populations.</em></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Selected conference presentations</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">2026</div>
+            <div class="cv-what">
+              <h3>COSYNE <span class="cv-kind">poster</span></h3>
+              <p class="cv-role">Lisbon, Portugal</p>
+              <p><em>Visual feature integration to detect approach in flies and humans.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2025</div>
+            <div class="cv-what">
+              <h3>Neurobiology of <em>Drosophila</em> <span class="cv-kind">poster</span></h3>
+              <p class="cv-role">Cold Spring Harbor Laboratory, NY, USA</p>
+              <p><em>Sequenced cue integration in approach detectors.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2025</div>
+            <div class="cv-what">
+              <h3>Indian <em>Drosophila</em> Research Conference <span class="cv-kind">poster</span></h3>
+              <p class="cv-role">IISER Mohali, India</p>
+              <p><em>Sequenced cue integration in approach detectors.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2024</div>
+            <div class="cv-what">
+              <h3>Kavli Institute Symposium <span class="cv-kind">poster</span></h3>
+              <p class="cv-role">Yale University, USA</p>
+              <p><em>Multi-cue integration in approach detection.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2022</div>
+            <div class="cv-what">
+              <h3>Marine Biological Laboratory <span class="cv-kind">talk</span></h3>
+              <p class="cv-role">Woods Hole, MA, USA</p>
+              <p><em>Building a steering signal in the fly brain.</em></p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2017</div>
+            <div class="cv-what">
+              <h3>International Summer School on Theoretical Biophysics <span class="cv-kind">talk</span></h3>
+              <p class="cv-role">Cargèse, France</p>
+              <p><em>Individuality and non-genetic inheritance in isogenic bacterial cells.</em></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Technical expertise</h2>
+        <div class="prose">
+          <dl class="cv-skills">
+            <dt>Neurophysiology and circuit manipulation</dt>
+            <dd>Two-photon calcium imaging; optogenetic activation and silencing; Gal4/UAS and split-Gal4 genetic targeting; connectome-guided circuit analysis.</dd>
+
+            <dt>Behaviour and instrumentation</dt>
+            <dd>Closed-loop fly-on-a-ball behavioural rigs with panoramic visual displays; optogenetic odour delivery systems with arbitrary spatiotemporal statistics; human and fly psychophysics; microfluidic device design and fabrication; long-term fluorescence microscopy.</dd>
+
+            <dt>Computational</dt>
+            <dd>Python and MATLAB; quantitative behavioural analysis; time-series and multivariate statistics; dynamical-systems and phenomenological modelling.</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Mentoring</h2>
+        <p class="cv-preamble">All Yale trainees were co-supervised with Dr. Damon Clark.</p>
+
+        <h3 class="cv-subhead">Research project supervision</h3>
+        <ul class="cv-list">
+          <li>
+            <div class="cv-when">2021 – present</div>
+            <div class="cv-what">
+              <h3>Natalia CB Matos <span class="cv-kind">graduate student, Yale</span></h3>
+              <p>Escape responses to translational motion and the fly's cutting strategy; manuscript in preparation, with N. Matos as first author and myself as second.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2026 – present</div>
+            <div class="cv-what">
+              <h3>Valentina Zhang <span class="cv-kind">graduate student, Yale</span></h3>
+              <p>Binocular visual processing in the fly; guided the design of anaglyph visual stimuli and of protocols for fly behavioural assays.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Spring 2022</div>
+            <div class="cv-what">
+              <h3>Krystian Loetscher <span class="cv-kind">graduate student, Yale</span></h3>
+              <p>Developed a new protocol for imaging the neck connective; provided training in dissection and imaging.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2022</div>
+            <div class="cv-what">
+              <h3>Daniel Otchere <span class="cv-kind">undergraduate, Yale</span></h3>
+              <p>Three months full-time; designed and built a rig for measuring threat-evoked behaviour in freely moving flies, analysed with custom automated tracking pipelines.</p>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="cv-subhead">Method and technical training</h3>
+        <ul class="cv-list">
+          <li>
+            <div class="cv-when">2023 – present</div>
+            <div class="cv-what">
+              <h3>Kate Maier <span class="cv-kind">graduate student, Yale</span></h3>
+              <p>Two-photon calcium imaging and visual stimulus design.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2025</div>
+            <div class="cv-what">
+              <h3>Dr. Maitri Manjunath <span class="cv-kind">postdoctoral researcher, Yale</span></h3>
+              <p>Programming, quantitative behavioural methods, and two-photon imaging.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2022 – 2024</div>
+            <div class="cv-what">
+              <h3>Parisa Vaziri <span class="cv-kind">undergraduate, Yale</span></h3>
+              <p>Habituation of the fly's escape response to looming stimuli; trained in programming and quantitative behavioural analysis. Now a Ph.D. student at Harvard University.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2021</div>
+            <div class="cv-what">
+              <h3>Dr. Joanna Jammal-Touma <span class="cv-kind">postdoctoral researcher, Pittsburgh</span></h3>
+              <p>Soft lithography, microfluidic fabrication, and single-cell analysis of bacterial growth and division.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2017</div>
+            <div class="cv-what">
+              <h3>Peyton Thompson <span class="cv-kind">undergraduate, Pittsburgh</span></h3>
+              <p>PCR, cell growth analysis, and general laboratory methods.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Teaching</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">2022 – present</div>
+            <div class="cv-what">
+              <h3>Neuroscience Bootcamp for Ph.D. students</h3>
+              <p class="cv-role">Teaching Assistant · Yale University</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Spring 2016</div>
+            <div class="cv-what">
+              <h3>Basic Physics for Science and Engineering (PHY 0174)</h3>
+              <p class="cv-role">Teaching Assistant · University of Pittsburgh</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Summer 2016</div>
+            <div class="cv-what">
+              <h3>Introductory Physics (PHY 101)</h3>
+              <p class="cv-role">Teaching Assistant · University of Pittsburgh</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">Fall 2015, 2016</div>
+            <div class="cv-what">
+              <h3>Stars, Galaxies, and the Cosmos (ASTRO 0089)</h3>
+              <p class="cv-role">Teaching Assistant · University of Pittsburgh</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">Service and outreach</h2>
+        <ul class="cv-list compact">
+          <li>
+            <div class="cv-when">Peer review</div>
+            <div class="cv-what">
+              <h3><em>PLOS Biology</em></h3>
+              <p>Co-reviewed a manuscript with Dr. Damon Clark.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2020</div>
+            <div class="cv-what">
+              <h3>Teacher, IFET organisation</h3>
+              <p>Designed and taught online science courses to high school students in rural India during the COVID-19 lockdown.</p>
+            </div>
+          </li>
+          <li>
+            <div class="cv-when">2017</div>
+            <div class="cv-what">
+              <h3>NSF Outreach Program, Pittsburgh Public School District</h3>
+              <p>Worked with high school teachers and students to develop instructional materials for science education.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-title">References</h2>
+        <div class="prose">
+          <p>Available on request — please <a href="mailto:{{ site.author.email }}">email me</a>.</p>
+        </div>
+      </section>
+
     </div>
-    {%- endif %}
   </div>
 </article>
