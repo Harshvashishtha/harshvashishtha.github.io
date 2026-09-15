@@ -507,6 +507,7 @@ main { flex: 1 0 auto; }
 }
 .tag-preprint { color: var(--accent); background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 25%, transparent); }
 .tag-review { color: var(--ink-2); }
+.tag-status { text-transform: none; letter-spacing: 0.01em; font-weight: 500; font-size: 0.72rem; }
 
 .pub-links {
   display: flex;

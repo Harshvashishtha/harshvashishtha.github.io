@@ -4,63 +4,72 @@
 #   title    required
 #   authors  list; add `me: true` to the entry that is you (it renders bold)
 #            add `full:` to give Google Scholar a fuller name than the display initials
+#            add `equal: true` to mark an equal-contribution author with an asterisk
 #   venue    journal or preprint server, as you want it printed
+#   detail   optional volume/pages, e.g. "14, 5710"
 #   year     required — drives the grouping and the citation metadata
 #   type     article | preprint | review   (controls the little tag)
+#   status   optional short label shown as a tag, e.g. "In press", "Under review"
 #   url      canonical landing page
 #   doi      optional; emitted as citation_doi for Google Scholar
-#   note     optional line under the entry (e.g. co-first authorship)
+#   note     optional line under the entry
 #   selected optional; true puts it in "Selected work" on the home page
-#   links    optional extra buttons (PDF, code, data, journal version…)
-
-- title: "Dynamic trajectory cues drive sequenced integration in approach detectors"
-  authors:
-    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
-    - { name: "N. Matos" }
-    - { name: "D. A. Clark" }
-  venue: "bioRxiv"
-  year: 2026
-  type: preprint
-  url: "https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1"
-  selected: true
+#   links    optional extra buttons (PDF, code, data, preprint…)
 
 - title: "A neural circuit for olfactory motion detection"
   authors:
-    - { name: "G. Santana" }
-    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "G. Santana", equal: true }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true, equal: true }
     - { name: "T. Emonet" }
     - { name: "D. A. Clark" }
   venue: "bioRxiv"
   year: 2026
   type: preprint
+  status: "Under review at Nature"
   url: "https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1"
-  note: "Co-first authors"
+  note: "* Equal contribution."
+  selected: true
+
+- title: "Dynamic trajectory cues drive sequenced integration in approach detectors"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "N. C. Matos" }
+    - { name: "H. Wu" }
+    - { name: "D. A. Clark" }
+  venue: "bioRxiv"
+  year: 2026
+  type: preprint
+  status: "In revision at PNAS"
+  url: "https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1"
   selected: true
 
 - title: "A luminance-induced expansion aftereffect"
   authors:
     - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
     - { name: "D. A. Clark" }
-  venue: "PsyArXiv"
+  venue: "Perception"
   year: 2026
-  type: preprint
+  type: article
+  status: "In press"
   url: "https://osf.io/preprints/psyarxiv/4zbms_v1"
+  note: "Title links to the PsyArXiv preprint until the journal version is out."
   selected: true
 
-- title: "Metabolomic rearrangement controls the intrinsic microbial response to temperature changes"
+- title: "Metabolic rearrangement enables adaptation of microbial growth rate to temperature shifts"
   authors:
-    - { name: "B. Knapp" }
+    - { name: "B. D. Knapp" }
     - { name: "L. Willis" }
     - { name: "C. Gonzalez" }
     - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
-    - { name: "J. J. Touma" }
+    - { name: "J. Jammal-Touma" }
     - { name: "M. Tikhonov" }
     - { name: "J. Ram" }
     - { name: "H. Salman" }
     - { name: "J. E. Elias" }
     - { name: "K. C. Huang" }
   venue: "Nature Microbiology"
-  year: 2024
+  detail: "10, 185–201"
+  year: 2025
   type: article
   url: "https://www.nature.com/articles/s41564-024-01841-4"
   doi: "10.1038/s41564-024-01841-4"
@@ -76,6 +85,7 @@
     - { name: "Z. N. Oltvai" }
     - { name: "H. Salman" }
   venue: "PNAS"
+  detail: "121(20), e2316271121"
   year: 2024
   type: article
   url: "https://www.pnas.org/doi/abs/10.1073/pnas.2316271121"
@@ -84,9 +94,12 @@
 - title: "Bacterial cell-size changes resulting from altering the relative expression of Min proteins"
   authors:
     - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
-    - { name: "J. Jammal" }
+    - { name: "J. Jammal-Touma" }
+    - { name: "K. Singh" }
+    - { name: "Y. Rabin" }
     - { name: "H. Salman" }
   venue: "Nature Communications"
+  detail: "14, 5710"
   year: 2023
   type: article
   url: "https://www.nature.com/articles/s41467-023-41487-0"
@@ -100,6 +113,7 @@
     - { name: "H. Salman" }
     - { name: "A. Mugler" }
   venue: "Physical Review E"
+  detail: "108, L032401"
   year: 2023
   type: article
   url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401"
@@ -113,6 +127,7 @@
   year: 2022
   type: review
   url: "https://www.cell.com/current-biology/fulltext/S0960-9822(22)01013-2"
+  note: "Invited Dispatch."
 
 - title: "Multiple timescales in bacterial growth homeostasis"
   authors:
@@ -122,6 +137,7 @@
     - { name: "H. Salman" }
     - { name: "N. Brenner" }
   venue: "iScience"
+  detail: "25, 103678"
   year: 2022
   type: article
   url: "https://www.cell.com/iscience/fulltext/S2589-0042(21)01648-5"
@@ -132,6 +148,7 @@
     - { name: "M. Kohram" }
     - { name: "H. Salman" }
   venue: "eLife"
+  detail: "10, e64779"
   year: 2021
   type: article
   url: "https://elifesciences.org/articles/64779"
@@ -162,6 +179,7 @@
     - { name: "Z. N. Oltvai" }
     - { name: "Z. Bar-Joseph" }
   venue: "PNAS"
+  detail: "116(24)"
   year: 2019
   type: article
   url: "https://www.pnas.org/doi/abs/10.1073/pnas.1816315116"
@@ -176,6 +194,7 @@
     - { name: "H. Salman" }
     - { name: "N. Brenner" }
   venue: "PNAS"
+  detail: "115(25)"
   year: 2018
   type: article
   url: "https://www.pnas.org/doi/abs/10.1073/pnas.1615526115"

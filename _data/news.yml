@@ -3,16 +3,18 @@
 #
 #   date: a plain string, printed as-is (e.g. "Jul 2026")
 #   text: one sentence. Markdown links work: [label](https://…)
-#
-# These entries are placeholders drawn from the preprint dates on your
-# publications list — please correct the dates and wording, or delete any
-# that aren't right.
-
-- date: "Jul 2026"
-  text: "Preprint out with Gustavo Santana and the Emonet lab: [A neural circuit for olfactory motion detection](https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1)."
-
-- date: "Jun 2026"
-  text: "New preprint: [Dynamic trajectory cues drive sequenced integration in approach detectors](https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1)."
 
 - date: "2026"
-  text: "Preprint describing the luminance-induced expansion aftereffect (Lexa) is [up on PsyArXiv](https://osf.io/preprints/psyarxiv/4zbms_v1)."
+  text: "[A luminance-induced expansion aftereffect](https://osf.io/preprints/psyarxiv/4zbms_v1) is in press at *Perception*."
+
+- date: "Jul 2026"
+  text: "Preprint with Gustavo Santana and the Emonet lab: [A neural circuit for olfactory motion detection](https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1) — the first circuit shown to compute the direction of motion of an odour signal."
+
+- date: "Jun 2026"
+  text: "Preprint: [Dynamic trajectory cues drive sequenced integration in approach detectors](https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1)."
+
+- date: "2026"
+  text: "Poster at COSYNE, Lisbon — *Visual feature integration to detect approach in flies and humans*."
+
+- date: "2025"
+  text: "Invited seminars at JNCASR Bengaluru and IIT Madras on sequenced cue integration in approach detectors."

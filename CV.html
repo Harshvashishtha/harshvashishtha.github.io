@@ -16,10 +16,10 @@ description: "Curriculum vitae for Harsh Vashistha — education, positions, pub
     </header>
 
     {%- if site.cv_file and site.cv_file != "" %}
-    <p class="pub-links" style="margin-bottom:2rem;">
+    <div class="hero-actions" style="margin: 0 0 2rem;">
       <a class="btn btn-primary" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" download>Download PDF</a>
       <a class="btn" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" rel="noopener">Open in a new tab</a>
-    </p>
+    </div>
 
     <object data="{{ '/assets/cv/' | append: site.cv_file | relative_url }}#view=FitH"
             type="application/pdf"

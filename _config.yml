@@ -9,15 +9,14 @@ author:
   name: "Harsh Vashistha"
   short_name: "H. Vashistha"
   email: "harsh.vashistha@yale.edu"
-  # Fill in your ORCID iD below (format: 0000-0000-0000-0000) to switch the link on.
-  orcid: ""
+  orcid: "0000-0002-9411-5137"
   scholar: "https://scholar.google.com/citations?user=YdsptUYAAAAJ&hl=en"
   twitter: "harshvashishtha"
   linkedin: "https://www.linkedin.com/in/harsh-vashistha-ph-d-69226123/"
   affiliation: "Department of Molecular, Cellular and Developmental Biology, Yale University"
 
 # Drop the CV file in assets/cv/ and put its filename here to turn the CV page on.
-cv_file: ""
+cv_file: "vashistha-cv.pdf"
 
 nav:
   - { title: "About",        url: "/" }
