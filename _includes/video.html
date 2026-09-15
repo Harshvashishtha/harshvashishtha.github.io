@@ -1,0 +1,19 @@
+{%- comment -%}
+  Click-to-play video figure. Nothing downloads until the visitor asks for it:
+  the poster is a small JPG and preload is off.
+
+  Usage: {% include video.html src="name" caption="…" %}
+         (src is the basename in /assets/media/, without .mp4)
+{%- endcomment -%}
+<figure class="figure">
+  <button class="video-play" type="button" data-playing="false"
+          aria-label="Play video{% if include.caption %}: {{ include.caption | strip_html | escape }}{% endif %}">
+    <video preload="none" muted playsinline loop
+           poster="{{ '/assets/media/' | append: include.src | append: '-poster.jpg' | relative_url }}">
+      <source src="{{ '/assets/media/' | append: include.src | append: '.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </button>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>

@@ -1,0 +1,47 @@
+---
+layout: default
+title: "CV"
+permalink: /CV/
+description: "Curriculum vitae for Harsh Vashistha — education, positions, publications and awards."
+---
+
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Curriculum vitae</h1>
+      {%- if site.cv_file and site.cv_file != "" %}
+      <p class="page-sub">Full CV as a PDF. For papers only, the
+        <a href="{{ '/Publications/' | relative_url }}">publications page</a> is kept current.</p>
+      {%- endif %}
+    </header>
+
+    {%- if site.cv_file and site.cv_file != "" %}
+    <p class="pub-links" style="margin-bottom:2rem;">
+      <a class="btn btn-primary" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" download>Download PDF</a>
+      <a class="btn" href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}" rel="noopener">Open in a new tab</a>
+    </p>
+
+    <object data="{{ '/assets/cv/' | append: site.cv_file | relative_url }}#view=FitH"
+            type="application/pdf"
+            style="width:100%;height:min(80vh,900px);border:1px solid var(--rule);border-radius:8px;background:var(--surface-2);">
+      <div class="prose" style="padding:2rem;">
+        <p>Your browser can't display the PDF inline.
+          <a href="{{ '/assets/cv/' | append: site.cv_file | relative_url }}">Download it instead</a>.</p>
+      </div>
+    </object>
+    {%- else %}
+    <div class="prose">
+      <p>The CV isn't posted yet. In the meantime, the
+        <a href="{{ '/Publications/' | relative_url }}">publications page</a> and
+        <a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a> cover the papers,
+        and <a href="{{ '/Research/' | relative_url }}">Research</a> covers the projects.</p>
+
+      <p class="pub-note-inline">
+        To turn this page on: drop the PDF into <code>assets/cv/</code> and set
+        <code>cv_file</code> in <code>_config.yml</code> to its filename. The page and the
+        nav link appear automatically.
+      </p>
+    </div>
+    {%- endif %}
+  </div>
+</article>

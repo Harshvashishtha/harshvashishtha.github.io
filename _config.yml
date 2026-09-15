@@ -1,36 +1,38 @@
 title: "Harsh Vashistha"
-author: "Harsh Vashistha"
-description: "Yale University"
-permalink: /:title/
+tagline: "Postdoctoral Associate, Clark Lab, Yale University"
+description: "Harsh Vashistha is a postdoctoral associate at Yale studying how neural circuits in Drosophila detect motion and integrate sensory cues, combining behaviour, two-photon imaging and quantitative modelling."
+url: "https://harshvashishtha.github.io"
+baseurl: ""
 lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
 
-# Layout
+author:
+  name: "Harsh Vashistha"
+  short_name: "H. Vashistha"
+  email: "harsh.vashistha@yale.edu"
+  # Fill in your ORCID iD below (format: 0000-0000-0000-0000) to switch the link on.
+  orcid: ""
+  scholar: "https://scholar.google.com/citations?user=YdsptUYAAAAJ&hl=en"
+  twitter: "harshvashishtha"
+  linkedin: "https://www.linkedin.com/in/harsh-vashistha-ph-d-69226123/"
+  affiliation: "Department of Molecular, Cellular and Developmental Biology, Yale University"
 
-show_excerpts: false        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: true       # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+# Drop the CV file in assets/cv/ and put its filename here to turn the CV page on.
+cv_file: ""
 
-# Menu
-
-navigation:    # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.md", title: "Home"}
-  - {file: "Research.md", title: "Research"}
-  - { file: "Publications.md", title: "Publications"}
-  - {file: "Resources.md", title: "Resources"}
-  - {file: "Contact.md", title: "Contact"}
-  - {file: "illusion.md", title: "illusion"}
-  
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:harsh.vashistha@yale.edu"}
-  - {title: X(twitter), icon: twitter, url: "https://twitter.com/harshvashishtha"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+nav:
+  - { title: "About",        url: "/" }
+  - { title: "Research",     url: "/Research/" }
+  - { title: "Publications", url: "/Publications/" }
+  - { title: "CV",           url: "/CV/" }
+  - { title: "Resources",    url: "/Resources/" }
+  - { title: "Contact",      url: "/Contact/" }
 
 plugins:
- - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - UNLICENSE.txt
+  - vendor

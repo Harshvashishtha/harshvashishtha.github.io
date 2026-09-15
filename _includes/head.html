@@ -1,0 +1,95 @@
+{%- assign page_title = page.title | default: site.title -%}
+{%- if page.url == "/" -%}
+  {%- assign full_title = site.title | append: " — " | append: site.tagline -%}
+{%- else -%}
+  {%- assign full_title = page_title | append: " · " | append: site.title -%}
+{%- endif -%}
+{%- assign page_desc = page.description | default: site.description -%}
+{%- assign social_img = "/assets/img/harsh.jpg" | absolute_url -%}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ full_title | escape }}</title>
+<meta name="description" content="{{ page_desc | strip_newlines | escape }}">
+<meta name="author" content="{{ site.author.name | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<meta property="og:type" content="{% if page.url == '/' %}profile{% else %}article{% endif %}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ full_title | escape }}">
+<meta property="og:description" content="{{ page_desc | strip_newlines | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ social_img }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ full_title | escape }}">
+<meta name="twitter:description" content="{{ page_desc | strip_newlines | escape }}">
+<meta name="twitter:image" content="{{ social_img }}">
+{%- if site.author.twitter %}
+<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{%- endif %}
+
+{%- comment %}
+  Highwire Press citation tags. Google Scholar reads these to index the page's
+  papers and attach them to the author record.
+{%- endcomment %}
+{%- if page.citation_meta -%}
+{%- for pub in site.data.publications -%}
+<meta name="citation_title" content="{{ pub.title | escape }}">
+{%- for a in pub.authors %}
+<meta name="citation_author" content="{{ a.full | default: a.name | escape }}">
+{%- endfor %}
+<meta name="citation_publication_date" content="{{ pub.year }}">
+<meta name="citation_journal_title" content="{{ pub.venue | escape }}">
+{%- if pub.doi %}
+<meta name="citation_doi" content="{{ pub.doi }}">
+{%- endif %}
+{%- if pub.url %}
+<meta name="citation_abstract_html_url" content="{{ pub.url }}">
+{%- endif %}
+{% endfor -%}
+{%- endif %}
+
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/img/harsh@300.jpg' | relative_url }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ site.url | append: site.baseurl | jsonify }},
+  "image": {{ social_img | jsonify }},
+  "email": {{ site.author.email | jsonify }},
+  "jobTitle": "Postdoctoral Associate",
+  "description": {{ site.description | jsonify }},
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Yale University",
+    "url": "https://www.yale.edu/"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "University of Pittsburgh",
+    "url": "https://www.pitt.edu/"
+  },
+  "knowsAbout": [
+    "Neural circuits",
+    "Drosophila melanogaster",
+    "Visual motion detection",
+    "Olfactory navigation",
+    "Two-photon calcium imaging",
+    "Biophysics"
+  ],
+  "sameAs": [
+    {{ site.author.scholar | jsonify }}{% if site.author.orcid and site.author.orcid != "" %},
+    {{ "https://orcid.org/" | append: site.author.orcid | jsonify }}{% endif %}{% if site.author.linkedin %},
+    {{ site.author.linkedin | jsonify }}{% endif %}{% if site.author.twitter %},
+    {{ "https://twitter.com/" | append: site.author.twitter | jsonify }}{% endif %}
+  ]
+}
+</script>

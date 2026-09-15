@@ -1,0 +1,18 @@
+# Short updates shown on the home page — newest first.
+# Keep roughly the five most recent; older ones can just be deleted.
+#
+#   date: a plain string, printed as-is (e.g. "Jul 2026")
+#   text: one sentence. Markdown links work: [label](https://…)
+#
+# These entries are placeholders drawn from the preprint dates on your
+# publications list — please correct the dates and wording, or delete any
+# that aren't right.
+
+- date: "Jul 2026"
+  text: "Preprint out with Gabriel Santana and the Emonet lab: [A neural circuit for olfactory motion detection](https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1)."
+
+- date: "Jun 2026"
+  text: "New preprint: [Dynamic trajectory cues drive sequenced integration in approach detectors](https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1)."
+
+- date: "2026"
+  text: "Preprint describing the luminance-induced expansion aftereffect (Lexa) is [up on PsyArXiv](https://osf.io/preprints/psyarxiv/4zbms_v1)."

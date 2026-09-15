@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Contact"
+permalink: /Contact/
+description: "Contact details for Harsh Vashistha at the Department of Molecular, Cellular and Developmental Biology, Yale University."
+---
+
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Contact</h1>
+      <p class="page-sub">
+        Email is the most reliable way to reach me. I'm happy to hear from
+        prospective collaborators and from students interested in the work.
+      </p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h2>Email</h2>
+        <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+
+        <h2 style="margin-top:1.75rem;">Phone</h2>
+        <p><a href="tel:+14127262640">412&#8209;726&#8209;2640</a></p>
+      </div>
+
+      <div class="contact-block">
+        <h2>Address</h2>
+        <address>
+          Department of Molecular, Cellular<br>
+          and Developmental Biology<br>
+          Yale University<br>
+          260 Whitney Avenue<br>
+          New Haven, CT 06511
+        </address>
+      </div>
+
+      <div class="contact-block">
+        <h2>Elsewhere</h2>
+        <p>
+          <a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a><br>
+          {%- if site.author.orcid and site.author.orcid != "" %}
+          <a href="https://orcid.org/{{ site.author.orcid }}" rel="noopener">ORCID</a><br>
+          {%- endif %}
+          <a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a><br>
+          <a href="https://twitter.com/{{ site.author.twitter }}" rel="noopener">X / Twitter</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</article>

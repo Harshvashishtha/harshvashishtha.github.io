@@ -1,0 +1,136 @@
+---
+layout: default
+title: "Research"
+permalink: /Research/
+needs_video_js: true
+description: "Research projects on visual and olfactory motion computation in Drosophila, multisensory cue integration, and single-cell growth control in E. coli."
+---
+
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Research</h1>
+      <p class="page-sub">
+        How nervous systems build reliable percepts out of unreliable signals — and,
+        earlier, how single cells hold a physical trait steady across generations.
+      </p>
+    </header>
+
+    <h2 class="section-title">Current projects</h2>
+
+    <section class="project no-media">
+      <div>
+        <h3>Multiple cue integration in visual perception</h3>
+        <p>
+          To recover the three-dimensional structure of the world from the
+          two-dimensional images on our retinas, brains rely on inference. Natural
+          visual environments are noisy enough that a single cue often fails to
+          support a reliable inference on its own, so brains combine evidence across
+          cues. This project asks how a circuit integrates several cues arising from
+          one visual event: which cues are pooled, in what order, and where in the
+          brain that pooling happens.
+        </p>
+        <p class="pub-links">
+          <a href="https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1" rel="noopener">Vashistha, Matos &amp; Clark (2026)</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="project no-media">
+      <div>
+        <h3>Motion computation in olfaction</h3>
+        <p>
+          Animals from insects to mammals navigate odour landscapes with remarkable
+          precision — finding food, avoiding predators, locating mates. The standard
+          account is that they infer direction indirectly, chiefly from wind. We asked
+          whether the olfactory system instead computes odour <em>motion</em> directly,
+          and found direction-selective responses to moving odour signals that do not
+          depend on airflow. Work in progress extends this to ask how such cues are
+          read out, and whether context lets a fly tell a threatening approach from a
+          harmless one.
+        </p>
+        <p class="pub-links">
+          <a href="https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1" rel="noopener">Santana, Vashistha, Emonet &amp; Clark (2026)</a>
+          <a href="https://www.nature.com/articles/s41586-022-05423-4" rel="noopener">Kadakia et al. (2022)</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="project">
+      <div>
+        <h3>Luminance-induced expansion aftereffect</h3>
+        <p>
+          Adaptation to visual motion produces robust aftereffects: after prolonged
+          viewing of a moving stimulus, a stationary pattern appears to drift the other
+          way — the motion aftereffect. Whether a purely temporal luminance change, with
+          no spatial displacement at all, is sufficient to produce one had been much less
+          explored.
+        </p>
+        <p>
+          We found that adapting to decreasing sawtooth luminance ramps produces not only
+          the known brightening aftereffect but also an illusory <em>expansion</em> on a
+          subsequently presented uniform grey screen. No spatial gradient is required for
+          the percept. We call it the luminance-induced expansion aftereffect, or Lexa.
+        </p>
+        <p class="pub-links">
+          <a href="https://osf.io/preprints/psyarxiv/4zbms_v1" rel="noopener">Vashistha &amp; Clark (2026), PsyArXiv</a>
+        </p>
+      </div>
+      <div class="project-media">
+        {% include video.html src="lexa-discs" caption="Luminance ramps, up and down, applied to a field of discs." %}
+      </div>
+    </section>
+
+    <h2 class="section-title" style="margin-top:3.5rem;">Past projects</h2>
+
+    <section class="project">
+      <div>
+        <h3>Cell size regulation in <em>E.&nbsp;coli</em></h3>
+        <p>
+          Cell size regulation is fundamental to homeostasis, and depends on nutrients,
+          environment and genetics together. <em>E.&nbsp;coli</em> uses dedicated
+          molecular machinery to monitor its own size and coordinate growth with
+          division. We built a phenomenological model of size homeostasis and then
+          perturbed the molecular components implicated in size monitoring — altering
+          the relative expression of the Min proteins — to test their contribution
+          experimentally.
+        </p>
+        <p class="pub-links">
+          <a href="https://www.nature.com/articles/s41467-023-41487-0" rel="noopener">Vashistha et al. (2023)</a>
+          <a href="https://www.cell.com/current-biology/fulltext/S0960-9822(20)31776-0" rel="noopener">Kohram et al. (2021)</a>
+          <a href="https://www.pnas.org/doi/abs/10.1073/pnas.1615526115" rel="noopener">Susman et al. (2018)</a>
+        </p>
+      </div>
+      <div class="project-media">
+        {% include video.html src="ecoli-growth" caption="Single E. coli tracked across generations in a microfluidic channel." %}
+      </div>
+    </section>
+
+    <section class="project">
+      <div>
+        <h3>Non-genetic inheritance and phenotypic variability</h3>
+        <p>
+          Stochastic biochemistry makes isogenic cells differ from one another over time.
+          That heterogeneity helps a population survive changing environments, but it is
+          partly restrained by what cells inherit from their parents. By measuring the
+          inheritance dynamics of sister-cell properties, we asked how fast cellular
+          properties drift and how reliable non-genetic inheritance actually is.
+        </p>
+        <p>
+          Non-genetic inheritance turns out to shape cell properties over several
+          generations, rather than the one or two generations previously assumed — a
+          result corroborated by a theoretical model that reproduces multigenerational
+          memory between sister cells.
+        </p>
+        <p class="pub-links">
+          <a href="https://elifesciences.org/articles/64779" rel="noopener">Vashistha, Kohram &amp; Salman (2021)</a>
+          <a href="https://www.cell.com/iscience/fulltext/S2589-0042(21)01648-5" rel="noopener">Stawsky et al. (2022)</a>
+          <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401" rel="noopener">ElGamel et al. (2023)</a>
+        </p>
+      </div>
+      <div class="project-media">
+        {% include video.html src="sister-cells" caption="Sister cells followed after division to measure inherited properties." %}
+      </div>
+    </section>
+  </div>
+</article>

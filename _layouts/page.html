@@ -1,7 +1,17 @@
 ---
 layout: default
 ---
-<article>
-  <header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>
-  {{ content }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>{{ page.title }}</h1>
+      {%- if page.subtitle %}
+      <p class="page-sub">{{ page.subtitle }}</p>
+      {%- endif %}
+    </header>
+
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
 </article>

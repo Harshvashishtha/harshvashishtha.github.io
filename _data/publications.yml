@@ -1,0 +1,182 @@
+# Publications. Newest first — the page groups them by year automatically.
+#
+# To add a paper, copy a block and edit it. Fields:
+#   title    required
+#   authors  list; add `me: true` to the entry that is you (it renders bold)
+#            add `full:` to give Google Scholar a fuller name than the display initials
+#   venue    journal or preprint server, as you want it printed
+#   year     required — drives the grouping and the citation metadata
+#   type     article | preprint | review   (controls the little tag)
+#   url      canonical landing page
+#   doi      optional; emitted as citation_doi for Google Scholar
+#   note     optional line under the entry (e.g. co-first authorship)
+#   selected optional; true puts it in "Selected work" on the home page
+#   links    optional extra buttons (PDF, code, data, journal version…)
+
+- title: "Dynamic trajectory cues drive sequenced integration in approach detectors"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "N. Matos" }
+    - { name: "D. A. Clark" }
+  venue: "bioRxiv"
+  year: 2026
+  type: preprint
+  url: "https://www.biorxiv.org/content/10.64898/2026.06.05.730527v1"
+  selected: true
+
+- title: "A neural circuit for olfactory motion detection"
+  authors:
+    - { name: "G. Santana" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "T. Emonet" }
+    - { name: "D. A. Clark" }
+  venue: "bioRxiv"
+  year: 2026
+  type: preprint
+  url: "https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1"
+  note: "Co-first authors"
+  selected: true
+
+- title: "A luminance-induced expansion aftereffect"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "D. A. Clark" }
+  venue: "PsyArXiv"
+  year: 2026
+  type: preprint
+  url: "https://osf.io/preprints/psyarxiv/4zbms_v1"
+  selected: true
+
+- title: "Metabolomic rearrangement controls the intrinsic microbial response to temperature changes"
+  authors:
+    - { name: "B. Knapp" }
+    - { name: "L. Willis" }
+    - { name: "C. Gonzalez" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "J. J. Touma" }
+    - { name: "M. Tikhonov" }
+    - { name: "J. Ram" }
+    - { name: "H. Salman" }
+    - { name: "J. E. Elias" }
+    - { name: "K. C. Huang" }
+  venue: "Nature Microbiology"
+  year: 2024
+  type: article
+  url: "https://www.nature.com/articles/s41564-024-01841-4"
+  doi: "10.1038/s41564-024-01841-4"
+
+- title: "Non-lethal deleterious mutation-induced allostasis accelerates bacterial aging"
+  authors:
+    - { name: "M. Kohram" }
+    - { name: "A. Sanderson" }
+    - { name: "A. Loui" }
+    - { name: "P. V. Thompson" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "A. Shomar" }
+    - { name: "Z. N. Oltvai" }
+    - { name: "H. Salman" }
+  venue: "PNAS"
+  year: 2024
+  type: article
+  url: "https://www.pnas.org/doi/abs/10.1073/pnas.2316271121"
+  doi: "10.1073/pnas.2316271121"
+
+- title: "Bacterial cell-size changes resulting from altering the relative expression of Min proteins"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "J. Jammal" }
+    - { name: "H. Salman" }
+  venue: "Nature Communications"
+  year: 2023
+  type: article
+  url: "https://www.nature.com/articles/s41467-023-41487-0"
+  doi: "10.1038/s41467-023-41487-0"
+  selected: true
+
+- title: "Multigenerational memory in cell size homeostasis"
+  authors:
+    - { name: "M. ElGamel" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "H. Salman" }
+    - { name: "A. Mugler" }
+  venue: "Physical Review E"
+  year: 2023
+  type: article
+  url: "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.L032401"
+  doi: "10.1103/PhysRevE.108.L032401"
+
+- title: "Feature maps: How the insect visual system organizes information"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "D. A. Clark" }
+  venue: "Current Biology"
+  year: 2022
+  type: review
+  url: "https://www.cell.com/current-biology/fulltext/S0960-9822(22)01013-2"
+
+- title: "Multiple timescales in bacterial growth homeostasis"
+  authors:
+    - { name: "A. Stawsky" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "J. T. Nechleba" }
+    - { name: "H. Salman" }
+    - { name: "N. Brenner" }
+  venue: "iScience"
+  year: 2022
+  type: article
+  url: "https://www.cell.com/iscience/fulltext/S2589-0042(21)01648-5"
+
+- title: "Non-genetic inheritance restraint of cell-to-cell variation"
+  authors:
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "M. Kohram" }
+    - { name: "H. Salman" }
+  venue: "eLife"
+  year: 2021
+  type: article
+  url: "https://elifesciences.org/articles/64779"
+  doi: "10.7554/eLife.64779"
+  selected: true
+
+- title: "Bacterial growth control mechanisms inferred from multivariate statistical analysis of single-cell measurements"
+  authors:
+    - { name: "M. Kohram" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "S. Leibler" }
+    - { name: "B. Xue" }
+    - { name: "H. Salman" }
+  venue: "Current Biology"
+  year: 2021
+  type: article
+  url: "https://www.cell.com/current-biology/fulltext/S0960-9822(20)31776-0"
+
+- title: "Adjustment in tumbling rates improves bacterial chemotaxis on obstacle-laden terrains"
+  authors:
+    - { name: "S. Rashid" }
+    - { name: "Z. Long" }
+    - { name: "S. Singh" }
+    - { name: "M. Kohram" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "S. Navlakha" }
+    - { name: "H. Salman" }
+    - { name: "Z. N. Oltvai" }
+    - { name: "Z. Bar-Joseph" }
+  venue: "PNAS"
+  year: 2019
+  type: article
+  url: "https://www.pnas.org/doi/abs/10.1073/pnas.1816315116"
+  doi: "10.1073/pnas.1816315116"
+
+- title: "Individuality and slow dynamics in bacterial growth homeostasis"
+  authors:
+    - { name: "L. Susman" }
+    - { name: "M. Kohram" }
+    - { name: "H. Vashistha", full: "Harsh Vashistha", me: true }
+    - { name: "J. T. Nechleba" }
+    - { name: "H. Salman" }
+    - { name: "N. Brenner" }
+  venue: "PNAS"
+  year: 2018
+  type: article
+  url: "https://www.pnas.org/doi/abs/10.1073/pnas.1615526115"
+  doi: "10.1073/pnas.1615526115"
