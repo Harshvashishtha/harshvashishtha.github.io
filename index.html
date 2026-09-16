@@ -5,35 +5,36 @@ permalink: /
 description: "Harsh Vashistha is a postdoctoral associate in the Clark Lab at Yale, studying how neural circuits in Drosophila detect motion and integrate sensory cues. Trained as a physicist, he combines behaviour, two-photon imaging and quantitative modelling. He is on the faculty job market for Fall 2027."
 ---
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
+<div class="wrap about-layout">
+
+  <div class="about-main">
+
+    <section class="hero">
       <h1 class="hero-name">Harsh Vashistha</h1>
-      <p class="hero-role">Postdoctoral Associate, Clark Lab · Yale University</p>
+      <p class="hero-role">Postdoctoral Associate, Clark Lab &middot; Yale University</p>
 
       <p class="hero-lede">
         I use fruit flies to study how neural circuits turn noisy, distributed sensory information into a
         meaningful behavioral action.
       </p>
 
-   <p class="hero-body">
+      <p class="hero-body">
         I came to neuroscience from physics. My PhD, with
         <a href="https://salmanhanna.wixsite.com/salman-lab/" rel="noopener">Hanna Salman</a>
         at the University of Pittsburgh, used custom microfluidics to track single
         <em>E.&nbsp;coli</em> across many generations and ask how physical traits like
         cell size are inherited and controlled.
       </p>
-      
+
       <p class="hero-body">
         I recently discovered that visual approach-detecting neurons
         integrate cues in the natural temporal order those cues occur
-        during a real approach — a strategy I call <em>sequenced cue integration</em>.
+        during a real approach &mdash; a strategy I call <em>sequenced cue integration</em>.
         And in collaboration with Thierry Emonet's group, we found the first
         neural circuit in any animal that computes the direction of motion of an odour
         signal, independent of wind.
       </p>
 
-   
       <div class="job-market">
         <p class="jm-head">On the faculty job market for Fall 2027.</p>
         <p>
@@ -48,79 +49,95 @@ description: "Harsh Vashistha is a postdoctoral associate in the Clark Lab at Ya
         <a class="btn btn-primary" href="{{ '/Research/' | relative_url }}">Research</a>
         <a class="btn" href="{{ '/Publications/' | relative_url }}">Publications</a>
         <a class="btn" href="{{ '/CV/' | relative_url }}">CV</a>
-        <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-portrait">
+    {%- if site.data.news and site.data.news.size > 0 %}
+    <section class="section">
+      <h2 class="section-title">Recent</h2>
+      <ul class="news">
+        {%- for item in site.data.news limit: 5 %}
+        <li>
+          <time>{{ item.date }}</time>
+          <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+    <section class="section">
+      <h2 class="section-title">Selected work</h2>
+      <ul class="pub-list pub-teaser">
+        {%- for pub in site.data.publications -%}
+          {%- if pub.selected -%}
+            {%- include publication.html pub=pub -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+      <p style="margin-top:1.5rem;">
+        <a href="{{ '/Publications/' | relative_url }}">All publications &rarr;</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Interests</h2>
+      <ul class="interests">
+        <li>Neural circuits</li>
+        <li>Visual motion detection</li>
+        <li>Olfactory motion and navigation</li>
+        <li>Multisensory integration</li>
+        <li>Two-photon calcium imaging</li>
+        <li>Optogenetics</li>
+        <li>Connectome-guided circuit analysis</li>
+        <li>Fly and human psychophysics</li>
+        <li>Biophysics</li>
+        <li>Single-cell microfluidics</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Beyond the lab</h2>
+      <div class="prose">
+        <p>
+          I play cricket, and read about archaeological excavations for reasons I find hard
+          to defend.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <aside class="about-aside" aria-label="Photo and contact details">
+    <div class="about-rail">
       <picture>
         <source srcset="{{ '/assets/img/harsh.webp' | relative_url }}" type="image/webp">
-        <img src="{{ '/assets/img/harsh.jpg' | relative_url }}"
+        <img class="rail-portrait"
+             src="{{ '/assets/img/harsh.jpg' | relative_url }}"
              width="600" height="600"
              alt="Portrait of Harsh Vashistha">
       </picture>
+
+      <div class="rail-contact">
+        <a class="rail-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+
+        <address class="rail-address">
+          Molecular, Cellular and<br>
+          Developmental Biology<br>
+          Yale University<br>
+          New Haven, CT
+        </address>
+
+        <ul class="rail-links">
+          <li><a href="{{ site.author.scholar }}" rel="noopener">Google Scholar</a></li>
+          {%- if site.author.orcid and site.author.orcid != "" %}
+          <li><a href="https://orcid.org/{{ site.author.orcid }}" rel="noopener">ORCID</a></li>
+          {%- endif %}
+          <li><a href="{{ site.author.linkedin }}" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://twitter.com/{{ site.author.twitter }}" rel="noopener">X / Twitter</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </aside>
 
-{%- if site.data.news and site.data.news.size > 0 %}
-<section class="section">
-  <div class="wrap">
-    <h2 class="section-title">Recent</h2>
-    <ul class="news">
-      {%- for item in site.data.news limit: 5 %}
-      <li>
-        <time>{{ item.date }}</time>
-        <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      </li>
-      {%- endfor %}
-    </ul>
-  </div>
-</section>
-{%- endif %}
-
-<section class="section">
-  <div class="wrap">
-    <h2 class="section-title">Selected work</h2>
-    <ul class="pub-list pub-teaser">
-      {%- for pub in site.data.publications -%}
-        {%- if pub.selected -%}
-          {%- include publication.html pub=pub -%}
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
-    <p style="margin-top:1.5rem;">
-      <a href="{{ '/Publications/' | relative_url }}">All publications →</a>
-    </p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <h2 class="section-title">Interests</h2>
-    <ul class="interests">
-      <li>Neural circuits</li>
-      <li>Visual motion detection</li>
-      <li>Olfactory motion and navigation</li>
-      <li>Multisensory integration</li>
-      <li>Two-photon calcium imaging</li>
-      <li>Optogenetics</li>
-      <li>Connectome-guided circuit analysis</li>
-      <li>Fly and human psychophysics</li>
-      <li>Biophysics</li>
-      <li>Single-cell microfluidics</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <h2 class="section-title">Beyond the lab</h2>
-    <div class="prose">
-      <p>
-        I play cricket, and read about archaeological excavations for reasons I find hard
-        to defend.
-      </p>
-    </div>
-  </div>
-</section>
+</div>
