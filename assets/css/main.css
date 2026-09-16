@@ -236,7 +236,7 @@ main { flex: 1 0 auto; }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 20rem;
+  grid-template-columns: minmax(0, 1fr) 13.5rem;
   gap: clamp(1.75rem, 5vw, 3.5rem);
   align-items: start;
 }
@@ -270,7 +270,6 @@ main { flex: 1 0 auto; }
 
 .hero-portrait img {
   width: 100%;
-  max-width: 13.5rem;
   border-radius: 10px;
   box-shadow: var(--shadow);
   aspect-ratio: 1;
@@ -309,29 +308,30 @@ main { flex: 1 0 auto; }
 /* --- Job market ----------------------------------------------------------- */
 
 .job-market {
-  margin-top: 1.5rem;
-  padding-top: 1.1rem;
+  grid-column: 1 / -1;
+  max-width: 52rem;
+  margin-top: 2.25rem;
+  padding-top: 1.25rem;
   border-top: 2px solid var(--accent);
 }
 .jm-head {
   font-family: var(--font-serif);
+  font-size: var(--step-1);
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.6rem;
 }
 .job-market p {
   color: var(--ink-2);
-  font-size: 0.92rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
-.job-market p + p { margin-top: 0.6rem; }
-.jm-meta { font-size: 0.82rem; color: var(--ink-3); }
+.job-market p + p { margin-top: 0.7rem; }
+.jm-meta { font-size: 0.88rem; color: var(--ink-3); }
 
 @media (max-width: 46em) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-portrait { display: contents; }
-  .hero-portrait picture { display: block; order: -1; max-width: 10.5rem; }
-  .job-market { order: 1; max-width: var(--measure); }
+  .hero-portrait { order: -1; max-width: 10.5rem; }
+  .job-market { margin-top: 1.75rem; }
 }
 
 /* --- Generic section ------------------------------------------------------ */
