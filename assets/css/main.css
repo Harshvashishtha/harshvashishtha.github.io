@@ -256,14 +256,30 @@ main { flex: 1 0 auto; }
 /* --- Home ----------------------------------------------------------------- */
 
 .hero {
-  padding-block: clamp(2.5rem, 6vw, 4.5rem) clamp(2rem, 4vw, 3rem);
+  padding-block: 0 clamp(2rem, 4vw, 3rem);
 }
 
-.hero-grid {
+/* Two columns for the whole About page: the left one scrolls, the right one
+   stays put. --rail-top clears the sticky site header (min-height 4.25rem). */
+.about-layout {
+  --rail-top: 5.5rem;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 13.5rem;
   gap: clamp(1.75rem, 5vw, 3.5rem);
   align-items: start;
+  padding-block-start: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.about-aside {
+  position: sticky;
+  top: var(--rail-top);
+  align-self: start;
+  /* If the rail is ever taller than the viewport, let it scroll on its own
+     rather than clipping the links. */
+  max-height: calc(100vh - var(--rail-top) - 1.5rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
 }
 
 .hero-name {
@@ -293,12 +309,40 @@ main { flex: 1 0 auto; }
   margin-bottom: 1rem;
 }
 
-.hero-portrait img {
+.rail-portrait {
+  display: block;
   width: 100%;
   border-radius: 10px;
   box-shadow: var(--shadow);
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.rail-contact {
+  margin-top: 1.1rem;
+  font-size: var(--step--1);
+  line-height: 1.55;
+}
+
+.rail-email {
+  display: block;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  margin-bottom: 0.6rem;
+}
+
+.rail-address {
+  font-style: normal;
+  color: var(--ink-3);
+  margin-bottom: 0.9rem;
+}
+
+.rail-links {
+  list-style: none;
+  display: grid;
+  gap: 0.3rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
 }
 
 .hero-actions {
@@ -353,8 +397,30 @@ main { flex: 1 0 auto; }
 .jm-meta { font-size: 0.88rem; color: var(--ink-3); }
 
 @media (max-width: 46em) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-portrait { order: -1; max-width: 10.5rem; }
+  .about-layout { grid-template-columns: 1fr; gap: 1.75rem; }
+  .about-aside {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    order: -1;
+  }
+  .about-rail {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+  }
+  .rail-contact { margin-top: 0; }
+}
+
+@media (max-width: 30em) {
+  .about-rail { grid-template-columns: 1fr; }
+  .about-rail picture { max-width: 9.5rem; }
+}
+
+/* Short windows: a stuck rail that can't fit is worse than one that scrolls. */
+@media (min-width: 46.01em) and (max-height: 34em) {
+  .about-aside { position: static; max-height: none; overflow: visible; }
 }
 
 /* --- Generic section ------------------------------------------------------ */
