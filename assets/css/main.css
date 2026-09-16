@@ -308,9 +308,8 @@ main { flex: 1 0 auto; }
 /* --- Job market ----------------------------------------------------------- */
 
 .job-market {
-  grid-column: 1 / -1;
-  max-width: 52rem;
-  margin-top: 2.25rem;
+  max-width: var(--measure);
+  margin-top: 1.75rem;
   padding-top: 1.25rem;
   border-top: 2px solid var(--accent);
 }
@@ -331,7 +330,6 @@ main { flex: 1 0 auto; }
 @media (max-width: 46em) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-portrait { order: -1; max-width: 10.5rem; }
-  .job-market { margin-top: 1.75rem; }
 }
 
 /* --- Generic section ------------------------------------------------------ */
