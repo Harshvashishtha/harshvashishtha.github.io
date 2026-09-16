@@ -131,8 +131,8 @@ main { flex: 1 0 auto; }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  backdrop-filter: saturate(160%) blur(10px);
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  backdrop-filter: saturate(150%) blur(10px);
   border-bottom: 1px solid var(--rule);
   padding-top: env(safe-area-inset-top, 0px);
 }
@@ -143,9 +143,9 @@ main { flex: 1 0 auto; }
 
 .header-inner {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   min-height: 4.25rem;
   flex-wrap: wrap;
 }
@@ -153,46 +153,66 @@ main { flex: 1 0 auto; }
 .brand {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
   text-decoration: none;
   color: var(--ink);
-  padding-block: 0.75rem;
+  padding-block: 0.7rem;
 }
 .brand-name {
   font-family: var(--font-serif);
   font-size: var(--step-1);
   font-weight: 600;
   letter-spacing: -0.015em;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 .brand-sub {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   color: var(--ink-3);
   letter-spacing: 0.01em;
 }
 .brand:hover .brand-name { color: var(--accent); }
 
+/* Nav sits on the header's bottom rule; the current page is the segment of
+   that rule you are standing on. */
 .site-nav {
   display: flex;
-  gap: 0.15rem;
+  align-items: stretch;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 .site-nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
   color: var(--ink-2);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 500;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
+  padding-block: 0.45rem;
   white-space: nowrap;
+  transition: color 0.15s ease;
 }
-.site-nav a:hover { color: var(--ink); background: var(--surface-2); }
-.site-nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.site-nav a:hover { color: var(--ink); }
+.site-nav a:hover::after { background: var(--rule); }
+.site-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.site-nav a[aria-current="page"]::after { background: var(--accent); }
 
 /* Mobile menu — checkbox toggle, no JS */
 .nav-toggle-label { display: none; }
 
 @media (max-width: 43.75em) {
-  .header-inner { min-height: 3.75rem; }
+  .header-inner { min-height: 3.75rem; align-items: center; }
   .nav-toggle-label {
     display: flex;
     flex-direction: column;
@@ -218,14 +238,19 @@ main { flex: 1 0 auto; }
     flex-direction: column;
     gap: 0;
     display: none;
-    padding-bottom: 0.75rem;
+    margin-top: 0.25rem;
+    padding-block: 0.4rem 0.75rem;
+    border-top: 1px solid var(--rule);
   }
   .nav-toggle:checked ~ .site-nav { display: flex; }
   .site-nav a {
-    padding: 0.7rem 0.75rem;
-    border-radius: 6px;
     font-size: 0.95rem;
+    padding: 0.7rem 0.9rem;
+    border-left: 2px solid transparent;
   }
+  .site-nav a::after { display: none; }
+  .site-nav a:hover { border-left-color: var(--rule); }
+  .site-nav a[aria-current="page"] { border-left-color: var(--accent); }
 }
 
 /* --- Home ----------------------------------------------------------------- */
