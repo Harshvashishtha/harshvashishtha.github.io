@@ -4,8 +4,8 @@
 #   date: a plain string, printed as-is (e.g. "Jul 2026")
 #   text: one sentence. Markdown links work: [label](https://…)
 
-- date: "2026"
-  text: "[A luminance-induced expansion aftereffect](https://osf.io/preprints/psyarxiv/4zbms_v1) is in press at *Perception*."
+- date: "Sep 2026"
+  text: "[A luminance-induced expansion aftereffect](https://journals.sagepub.com/doi/10.1177/03010066261485942) is now published in *Perception*."
 
 - date: "Jul 2026"
   text: "Preprint with Gustavo Santana and the Emonet lab: [A neural circuit for olfactory motion detection](https://www.biorxiv.org/content/10.64898/2026.07.13.738327v1) — the first circuit shown to compute the direction of motion of an odour signal."
